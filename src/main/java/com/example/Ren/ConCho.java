@@ -1,9 +1,15 @@
 package com.example.Ren;
 
 public class ConCho {
-    public String ten;
-    public int tuoi;
-    private void sua(){
-        System.out.println("Gâu gâu");
+    public int add(int a, int b) {
+        return a + b;
+    }
+
+    public int add(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public int add(int a , int b, int c, int d){
+        return a + b + c + d;
     }
 }
