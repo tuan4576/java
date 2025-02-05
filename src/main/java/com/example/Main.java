@@ -6,6 +6,7 @@ import com.example.Constructors.ConstructorKTS;
 import com.example.Encapsulation.privaten;
 import com.example.Encapsulation.protectedn;
 import com.example.Encapsulation.publicn;
+import com.example.Inheritance.Dog;
 public class Main {
   public static void main(String[] args) {
     int cv;
@@ -33,6 +34,13 @@ public class Main {
         case 5: 
         ConstructorCTS concts = new ConstructorCTS("tuan",20);
         concts.display();
+        break;
+        case 6:
+        Dog dog = new Dog();
+        dog.name = "cho";
+        dog.Eat();
+        dog.Runn();
+        dog.makeSound();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
