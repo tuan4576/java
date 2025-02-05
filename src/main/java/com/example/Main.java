@@ -1,14 +1,10 @@
 package com.example;
-
 import java.util.Scanner;
 
-import com.example.Ren.Encapsulation;
-
+import com.example.Encapsulation.privaten;
+import com.example.Encapsulation.protectedn;
+import com.example.Encapsulation.publicn;
 public class Main {
-  private void animal1() {
-    System.out.println("private");
-  }
-
   public static void main(String[] args) {
     int cv;
     Scanner scanner = new Scanner(System.in);
@@ -17,28 +13,17 @@ public class Main {
       cv = scanner.nextInt();
       switch (cv) {
         case 1:
-          Encapsulation pub = new Encapsulation();
-          pub.animal();
-          break;
+        publicn pu1 = new publicn();
+        pu1.pu();
+        break;
         case 2:
-          Main pri = new Main();
-          pri.animal1();
-          break;
+        privaten pr1 = new privaten();
+        pr1.prchirld();
+        break;
         case 3:
-          Encapsulation p = new Encapsulation();
-          p.Lopcha();
-          break;
-        case 4:
-          Encapsulation lopcao = new Encapsulation();
-          lopcao.Lopcao();
-          break;
-        case 5:
-          Encapsulation lopcaoo = new Encapsulation();
-          System.out.println("Nhập tên");
-          String x = scanner.next();
-          lopcaoo.setter(x);
-          System.out.println("Vậy tên của bạn là : " + lopcaoo.getter());
-          break;
+        protectedn pro1 = new protectedn();
+        pro1.proExt();
+        break;
         default:
           System.out.println("Lựa chọn của bạn không có trong này");
           break;
