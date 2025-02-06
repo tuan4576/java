@@ -7,6 +7,8 @@ import com.example.Encapsulation.privaten;
 import com.example.Encapsulation.protectedn;
 import com.example.Encapsulation.publicn;
 import com.example.Inheritance.Dog;
+import com.example.Polymorphism.Overloading;
+import com.example.Polymorphism.Overriding;
 public class Main {
   public static void main(String[] args) {
     int cv;
@@ -41,6 +43,23 @@ public class Main {
         dog.Eat();
         dog.Runn();
         dog.makeSound();
+        break;
+        case 7:
+        Overloading ovr =  new Overloading(5,5);
+        int Construc = ovr.Trave();
+        int kq1 = ovr.PhepCong(5,6);
+        int kq2 = ovr.PhepCong(5,6,7);
+        int kq3 = ovr.PhepCong(5,6,7,8);
+        int kq4 = ovr.PhepCong(5,6,7,8,9);
+        System.out.println("Ket qua Constructor la : " + Construc);
+        System.out.println("Ket qua Hai chu so la : " + kq1);
+        System.out.println("Ket qua Ba chu so la : " + kq2);
+        System.out.println("Ket qua Bon chu so la : " + kq3);
+        System.out.println("Ket qua Nam chu so la : " + kq4);
+        break;
+        case 8:
+        Overriding ove = new Overriding();
+        ove.Make();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
