@@ -7,8 +7,10 @@ import com.example.Encapsulation.privaten;
 import com.example.Encapsulation.protectedn;
 import com.example.Encapsulation.publicn;
 import com.example.Inheritance.Dog;
+import com.example.NestedClass.Outer;
 import com.example.Polymorphism.Overloading;
 import com.example.Polymorphism.Overriding;
+import com.example.Static.StaticVariable;
 public class Main {
   public static void main(String[] args) {
     int cv;
@@ -60,6 +62,24 @@ public class Main {
         case 8:
         Overriding ove = new Overriding();
         ove.Make();
+        break;
+        case 9:
+        Outer.Nested Ou = new Outer.Nested(); 
+        Ou.display();
+        break;
+        case 10:
+        StaticVariable StcV02 = new StaticVariable();
+        StaticVariable StcV01 = new StaticVariable();
+        StcV01.SetVariable(10);
+        System.out.println("Giá trị của Lop  là : " +  StaticVariable.SoNguyen);
+        System.out.println("Giá trị của đối tượng một là : " +  StcV01.SoNguyen);
+        System.out.println("Giá trị của đối tượng hai là : " +  StcV02.SoNguyen);
+        StcV01.showCount();
+        break;
+        case 11:
+        // StaticVariable StcMt = new StaticVariable();
+        // int result = StcMt.StaticMethod(5);
+        System.out.println("Ket qua la : " + StaticVariable.StaticMethod(5));
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
