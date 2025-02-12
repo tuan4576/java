@@ -11,6 +11,8 @@ import com.example.NestedClass.Outer;
 import com.example.Polymorphism.Overloading;
 import com.example.Polymorphism.Overriding;
 import com.example.Static.StaticVariable;
+import com.example.Abstract.AbstractClass;
+import com.example.Abstract.Interface;
 public class Main {
   public static void main(String[] args) {
     int cv;
@@ -80,6 +82,16 @@ public class Main {
         // StaticVariable StcMt = new StaticVariable();
         // int result = StcMt.StaticMethod(5);
         System.out.println("Ket qua la : " + StaticVariable.StaticMethod(5));
+        break;
+        case 12:
+        AbstractClass abs = new AbstractClass();
+        abs.Make();
+        abs.Makee();
+        break;
+        case 13:
+        Interface inter = new Interface();
+        inter.Make();
+        inter.Makee();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
