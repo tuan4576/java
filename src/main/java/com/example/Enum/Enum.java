@@ -1,4 +1,4 @@
-package com.example.Ẹnum;
+package com.example.Enum;
 
 public enum Enum {
     // LOW(400),

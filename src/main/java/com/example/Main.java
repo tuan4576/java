@@ -3,9 +3,11 @@ import java.util.Scanner;
 
 import com.example.Constructors.ConstructorCTS;
 import com.example.Constructors.ConstructorKTS;
+import com.example.Date.LocalDatee;
 import com.example.Encapsulation.privaten;
 import com.example.Encapsulation.protectedn;
 import com.example.Encapsulation.publicn;
+import com.example.Enum.Enum;
 import com.example.Inheritance.Dog;
 import com.example.NestedClass.Outer;
 import com.example.Polymorphism.Overloading;
@@ -13,8 +15,11 @@ import com.example.Polymorphism.Overriding;
 import com.example.Static.StaticVariable;
 import com.example.Abstract.AbstractClass;
 import com.example.Abstract.Interface;
-import com.example.Ẹnum.Enum;
 public class Main {
+  static void Create(){
+    Enum myVar = Enum.BLUE;
+  System.out.println("Ket qua la : " + myVar.GetEnum());
+  }
   public static void main(String[] args) {
     int cv;
     Scanner scanner = new Scanner(System.in);
@@ -101,8 +106,13 @@ public class Main {
         // Enum myVar = Enum.RED;
         // System.out.println("Ket qua la : " + myVar.action(2, 6));
         //---------------------
-        Enum myVar = Enum.BLUE;
-        System.out.println("Ket qua la : " + myVar.GetEnum());
+        Create();
+        break;
+        case 15:
+        LocalDatee n = new LocalDatee();
+        n.Date();
+        n.Time();
+        n.FormatDateTime();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
