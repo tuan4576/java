@@ -1,4 +1,5 @@
 package com.example;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 import com.example.Constructors.ConstructorCTS;
@@ -15,6 +16,7 @@ import com.example.Polymorphism.Overriding;
 import com.example.Static.StaticVariable;
 import com.example.Abstract.AbstractClass;
 import com.example.Abstract.Interface;
+import com.example.Array.Arraylist;
 public class Main {
   static void Create(){
     Enum myVar = Enum.BLUE;
@@ -113,6 +115,10 @@ public class Main {
         n.Date();
         n.Time();
         n.FormatDateTime();
+        break;
+        case 16:
+        Arraylist a = new Arraylist();
+        a.Arr();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
