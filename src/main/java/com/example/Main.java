@@ -1,4 +1,5 @@
 package com.example;
+import java.io.File;
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -17,6 +18,7 @@ import com.example.Static.StaticVariable;
 import com.example.Abstract.AbstractClass;
 import com.example.Abstract.Interface;
 import com.example.Array.Arraylist;
+import com.example.File.FileIO;
 public class Main {
   static void Create(){
     Enum myVar = Enum.BLUE;
@@ -119,6 +121,10 @@ public class Main {
         case 16:
         Arraylist a = new Arraylist();
         a.Arr();
+        break;
+        case 17:
+        FileIO f = new FileIO();
+        f.Fi();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");

@@ -9,9 +9,11 @@ public class Arraylist {
         card.add(0,"Mot");
         card.set(0,"Nam");
         card.remove(0);
-        card.clear();
+        // card.clear();
+        
         // System.out.println(card);
         // System.out.println("GetIndex : " + card.get(0));
         System.out.println("Setvalue : " + card);
+        System.out.println("Size : " + card.size());   
     }
 }
