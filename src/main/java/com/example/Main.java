@@ -13,6 +13,7 @@ import com.example.Polymorphism.Overriding;
 import com.example.Static.StaticVariable;
 import com.example.Abstract.AbstractClass;
 import com.example.Abstract.Interface;
+import com.example.Ẹnum.Enum;
 public class Main {
   public static void main(String[] args) {
     int cv;
@@ -92,6 +93,16 @@ public class Main {
         Interface inter = new Interface();
         inter.Make();
         inter.Makee();
+        break;
+        case 14:
+        // Enum myVar = Enum.MEDIUM;
+        // System.out.println("Ket qua la : " + myVar.GetEnum());
+        //--------------------
+        // Enum myVar = Enum.RED;
+        // System.out.println("Ket qua la : " + myVar.action(2, 6));
+        //---------------------
+        Enum myVar = Enum.BLUE;
+        System.out.println("Ket qua la : " + myVar.GetEnum());
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
