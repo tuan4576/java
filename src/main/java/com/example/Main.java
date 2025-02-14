@@ -18,6 +18,7 @@ import com.example.Static.StaticVariable;
 import com.example.Abstract.AbstractClass;
 import com.example.Abstract.Interface;
 import com.example.Array.Arraylist;
+import com.example.Array.Sort;
 import com.example.File.FileIO;
 public class Main {
   static void Create(){
@@ -125,6 +126,13 @@ public class Main {
         case 17:
         FileIO f = new FileIO();
         f.Fi();
+        break;
+        case 18:
+        Sort S = new Sort();
+        // S.Nu();
+        // S.Rnu();
+        // S.St();
+        S.Rst();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
