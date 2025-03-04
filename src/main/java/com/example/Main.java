@@ -15,6 +15,7 @@ import com.example.NestedClass.Outer;
 import com.example.Polymorphism.Overloading;
 import com.example.Polymorphism.Overriding;
 import com.example.Static.StaticVariable;
+import com.example.Structures.Arr;
 import com.example.Abstract.AbstractClass;
 import com.example.Abstract.Interface;
 import com.example.Array.Arraylist;
@@ -133,6 +134,10 @@ public class Main {
         // S.Rnu();
         // S.St();
         S.Rst();
+        break;
+        case 19:
+        Arr ar = new Arr();
+        ar.Ar();
         break;
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
