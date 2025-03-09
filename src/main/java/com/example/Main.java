@@ -1,8 +1,10 @@
 package com.example;
-import java.io.File;
-import java.util.ArrayList;
 import java.util.Scanner;
 
+import com.example.Abstract.AbstractClass;
+import com.example.Abstract.Interface;
+import com.example.Array.Arraylist;
+import com.example.Array.Sort;
 import com.example.Constructors.ConstructorCTS;
 import com.example.Constructors.ConstructorKTS;
 import com.example.Date.LocalDatee;
@@ -10,17 +12,13 @@ import com.example.Encapsulation.privaten;
 import com.example.Encapsulation.protectedn;
 import com.example.Encapsulation.publicn;
 import com.example.Enum.Enum;
+import com.example.File.FileIO;
 import com.example.Inheritance.Dog;
+import com.example.Learn.Poly;
 import com.example.NestedClass.Outer;
 import com.example.Polymorphism.Overloading;
 import com.example.Polymorphism.Overriding;
 import com.example.Static.StaticVariable;
-import com.example.Structures.Arr;
-import com.example.Abstract.AbstractClass;
-import com.example.Abstract.Interface;
-import com.example.Array.Arraylist;
-import com.example.Array.Sort;
-import com.example.File.FileIO;
 public class Main {
   static void Create(){
     Enum myVar = Enum.BLUE;
@@ -136,9 +134,11 @@ public class Main {
         S.Rst();
         break;
         case 19:
-        Arr ar = new Arr();
-        ar.Ar();
+        Poly po = new Poly();
+        po.Ov(2, 3);
+        po.Ov(2, 3, 4);
         break;
+        case 20:
         default:
           System.out.println("Lua chon cua ban khong co trong nay");
           break;
